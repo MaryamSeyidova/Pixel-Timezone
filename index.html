@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="container" style="padding: 10px;"> <!-- Add padding for smaller layout -->
+        <h1>Maryam & Chaim's <br> <br>Pixel Timezone</h1>
+
+        <div class="chat-box">
+            <div class="character" id="maryam">
+                <img src="assets/Maryam-Casual.gif" alt="Maryam">
+            </div>
+            <div class="character" id="chaim">
+                <img src="assets/Chaim-Casual.gif" alt="Chaim">
+            </div>
+        </div>
+        <div class="dialogue-box" id="chat-box">
+            <p id="dialogue-text">Click on us to ask a question!</p>
+        </div>
+
+        <button id="goto-karaoke" onclick="location.href='karaoke.html'">
+            🎤 Go to Karaoke</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

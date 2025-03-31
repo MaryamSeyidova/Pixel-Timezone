@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karaoke Night!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="matcha-room">
+
+    <audio id="karaoke-music" loop>
+        <source src="assets/Lovely.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="karaoke-container">
+        <h1>🎤 Maryam & Chaim's Karaoke 🎶</h1>
+
+        <!-- Smiling images visible initially -->
+        <div class="karaoke-scene" id="smiling-scene">
+            <img src="assets/Maryam-Ball.gif" id="maryam-smile">
+            <img src="assets/Chaim-Ball.gif" id="chaim-smile">
+        </div>
+
+        <div id="lyrics-box">
+            <p id="lyrics-text">🎵 Click "Start Singing" to begin! 🎶</p>
+        </div>
+
+        <button id="start-singing">🎶 Start Singing</button>
+        <button onclick="location.href='index.html'">⬅ Go HOME</button>
+
+        <!-- Singing images hidden initially -->
+        <div class="karaoke-scene hidden" id="singing-scene">
+            <img src="assets/Maryam-Sing.gif" id="maryam-sing">
+            <img src="assets/Chaim-Sing.gif" id="chaim-sing">
+        </div>
+    </div>
+
+    <script src="karaoke.js"></script>
+</body>
+</html>

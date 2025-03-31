@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #a8c686;
+    color: #2d2d2d;
+    font-size: 12px;
+    width: 100%; /* Adjust to fit screen width */
+    height: 100%; /* Adjust to fit screen height */
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 320px; /* Limit container width */
+    margin: 0 auto; /* Center container */
+    padding: 10px;
+}
+
+.chat-box {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center both characters */
+    padding: 20px;
+    gap: 20px; /* Add a small space between Maryam and Chaim */
+    max-width: 90%;
+    margin: 0 auto 20px; /* Add bottom margin to separate from dialogue box */
+}
+
+/* Characters */
+.character img {
+    width: 25vw; /* Further increase size using viewport width */
+    max-width: 150px; /* Increase maximum size */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.character img:hover {
+    transform: scale(1.1);
+}
+
+/* Dialogue Box */
+.dialogue-box {
+    background: black;
+    color: white;
+    padding: 20px;
+    max-width: 90%; /* Adjust width for responsiveness */
+    margin: 0 auto; /* Center dialogue box */
+    border: 3px solid white;
+    font-size: 12px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Typing Animation */
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: normal; /* Allow text to wrap to the next line */
+    border-right: 3px solid white;
+    animation: typing 2s steps(20) forwards, blink 0.5s infinite;
+    word-wrap: break-word; /* Ensure words wrap properly */
+    overflow-wrap: break-word; /* Prevent breaking words mid-way */
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+/* Buttons */
+button {
+    background: #ffcc00;
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Hidden class to toggle visibility */
+.hidden {
+    display: none;
+}
+
+/*smiling*/
+.karaoke-scene img {
+    width: 20vw; /* Use viewport width for responsiveness */
+    max-width: 200px; /* Limit maximum size */
+    height: auto;
+    margin: 10px; /* Add spacing between images */
+}
+
+/*Singing*/
+#maryam-sing,
+#chaim-sing {
+    margin-top: 100px;
+    width: 30vw; /* Use viewport width for responsiveness */
+    max-width: 200px; /* Limit maximum size */
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px; /* Increase font size for larger screens */
+    }
+
+    .container {
+        max-width: 600px; /* Adjust container width for desktop */
+    }
+
+    .dialogue-box {
+        font-size: 14px; /* Adjust font size for desktop */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button text size for desktop */
+    }
+}
+
